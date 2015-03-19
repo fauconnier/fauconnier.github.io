@@ -9,11 +9,31 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color:#222;
-  margin:0 0 20px;
+}
+
+
+h1, h4, h6 {
+ margin:0px 0px 15px;
+}
+
+h3 {
+  margin:70px 0px 20px;
+}
+
+h5 {
+  margin:40px 0px 10px;
+}
+
+#firsth{
+  margin:0px 0px 20px;
+}
+
+#lasth{
+  margin:30px 0px 0px;
 }
 
 p, ul, ol, table, pre, dl {
-  margin:0 0 20px;
+  margin:0px 0px 20px;
 }
 
 h1, h2, h3 {
@@ -24,15 +44,7 @@ h1 {
   font-size:28px;
 }
 
-h2 {
-  color:#393939;
-  color:#222;
-}
 
-h3, h4, h5, h6 {
-  color:#494949;
-    color:#222;
-}
 
 a {
   color:#39c;
@@ -52,6 +64,19 @@ a small {
   top:-70px;
   visibility:hidden;
 
+}
+
+.projectpic{
+  display:block;
+  float:left;
+  width:100px;
+  height:100px;
+  box-sizing:border-box;
+  margin-right:15px;
+  margin-top:2px;
+  margin-bottom:5px;
+  padding:0px;
+  
 }
 
 .wrapper {
