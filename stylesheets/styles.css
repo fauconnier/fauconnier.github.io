@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-h1, h4, h6 {
+h1, h4, h5, h6 {
  margin:0px 0px 15px;
 }
 
@@ -20,9 +20,7 @@ h3 {
   margin:70px 0px 20px;
 }
 
-h5 {
-  margin:40px 0px 10px;
-}
+
 
 #firsth{
   margin:0px 0px 20px;
@@ -61,7 +59,7 @@ a small {
 
 .anchor {
   position:relative;
-  top:-70px;
+  top:-60px;
   visibility:hidden;
 
 }
