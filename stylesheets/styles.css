@@ -23,7 +23,7 @@ h3 {
 
 #firsth{
   margin:0px 0px 20px;
-  top=-60px;
+  top:-60px;
 }
 
 p, ul, ol, table, pre, dl {
@@ -69,7 +69,7 @@ a small {
   float:left;
   width:100px;
   height:100px;
-  box-sizing:border-box;
+  box-sizing: border-box;
   margin-right:15px;
   margin-top:2px;
   margin-bottom:5px;
@@ -146,7 +146,6 @@ header ul {
 }
 
 header li a {
-  text-fransform:uppercase;
   text-decoration:none;
   display:block;
 }
