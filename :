@@ -38,7 +38,7 @@ ga('send', 'pageview');
 			<!-- Header -->
 			<header>
 				<h1>Jean-Philippe Fauconnier</h1>
-                <p>Currently, I am a Research and Teaching Assistant at the Department of Mathematics and Computer Science, Université Toulouse Jean Jaurès. My research focuses on the <a href="http://en.wikipedia.org/wiki/Document_layout_analysis" target="_blank">analysis of the logical layout</a>  of documents and the <a href="http://en.wikipedia.org/wiki/Knowledge_acquisition" target="_blank">task of knowledge acquisition</a>,  
+                <p>Currently, I am a Research and Teaching Assistant (ATER) at the Department of Mathematics and Computer Science, Université Toulouse Jean Jaurès. My research focuses on the <a href="http://en.wikipedia.org/wiki/Document_layout_analysis" target="_blank">analysis of the logical layout</a>  of documents and the <a href="http://en.wikipedia.org/wiki/Knowledge_acquisition" target="_blank">task of knowledge acquisition</a>,  
                     mainly using <a href="http://en.wikipedia.org/wiki/Supervised_learning" target="_blank">supervised learning </a> methods.</p>
 				<ul>
 					<li><a href="#about">About</a></li>
@@ -56,26 +56,26 @@ ga('send', 'pageview');
             <section>
 				<!-- About --> 
 				<h3 id="firsth">About<span id="about" class="anchor"/></h3>
-                <p> I have recently obtained my PhD in Computer Science at the <a href="http://www.irit.fr" target="_blank">Toulouse Institute of Computer Science Research</a>, Université Paul Sabatier (France). My work has taken place under the supervision of Drs <a href="http://www.irit.fr/~Mouna.Kamel/index_en.php" target="_blank">Mouna Kamel</a> and <a href="http://www.irit.fr/~Nathalie.Aussenac-Gilles/index_en.php" target="_blank">Nathalie Aussenac-Gilles</a>, and has focused on Document Analysis, Machine Learning and Computational Linguistics fields. More particularly, I was interested in the acquisition of lexical relations using the layout and the formatting of documents. Previously, I was graduated in Natural Language Processing at the <a href="http://www.uclouvain.be/en-index.html" target="_blank">Catholic University of Louvain</a> (Belgium) in 2012. This Master's degree programme was delivered by the <a href="http://www.uclouvain.be/en-cental.html" target="_blank">CENTAL</a> laboratory.</p>
+				<p> I have recently obtained my PhD in Computer Science from the Université Paul Sabatier, at the <a href="http://www.irit.fr" target="_blank">Toulouse Institute of Computer Science Research</a>. My work has taken place under the supervision of Drs <a href="http://www.irit.fr/~Mouna.Kamel/index_en.php" target="_blank">Mouna Kamel</a> and <a href="http://www.irit.fr/~Nathalie.Aussenac-Gilles/index_en.php" target="_blank">Nathalie Aussenac-Gilles</a>, and has focused on Document Analysis, Machine Learning and Computational Linguistics fields. More particularly, I was interested in the acquisition of lexical relations using the layout and the formatting of documents. Previously, I was graduated in Natural Language Processing at the <a href="http://www.uclouvain.be/en-index.html" target="_blank">Catholic University of Louvain</a> (Belgium) in 2012. This Master degree programme was delivered by the <a href="http://www.uclouvain.be/en-cental.html" target="_blank">CENTAL</a> laboratory.</p>
 
 				<!-- Research interests -->
 				<h3>Research Interests<span id="research" class="anchor"/></h3>
 
 				<h4>Natural Language Processing</h4>
 				<ul>
-					<li><strong>Analysis</strong>: morpho-lexical analysis and syntactic parsing</li>
+					<li><strong>Analysis</strong>: Morpho-lexical analysis and syntactic parsing</li>
 					<li><strong>Corpora</strong>: development of annotation tools, annotation campaigns, and inter-rater agreement evaluation</li>
-					<li><strong>Meaning</strong>: ontology learning from text and Word embedding</li>
+					<li><strong>Meaning</strong>: Ontology learning from text and Word embedding</li>
 				</ul>
                 <h4>Document Analysis</h4>
                 <ul>
-                    <li><strong>Logical modeling</strong>: links between physical layout structures and logical ones</li>
-                    <li><strong>LR Parsing</strong>: statistical and context-free grammar parsing for building logical tree</li>
+                    <li><strong>Logical modeling</strong>:  </li>
+                    <li><strong>LR Parsing</strong>: statistical (machine learning) and symbolic (context-free grammar) parsing for building logical tree</li>
                 </ul>
 				<h4>Statistics</h4>
 				<ul>
-					<li><strong>Predictive modeling</strong>: supervised classification, structured prediction and unsupervised feature selection</li>
-					<li><strong>Descriptive analytics</strong>: statistical relationships and multivariate analysis </li>
+					<li><strong>Predictive modeling</strong>: Supervised classification, structured prediction and unsupervised feature selection</li>
+					<li><strong>Descriptive analytics</strong>: Statistical relationships and multivariate analysis </li>
 				</ul>
 
 
