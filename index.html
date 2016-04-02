@@ -44,9 +44,10 @@ ga('send', 'pageview');
 					<li><a href="#research">Research</a></li>
 					<li><a href="#works">Works</a></li>
 					<li><a href="#teaching">Teaching</a></li>
-                    <li><a href="#softwaredata">Software &amp; Data</a></li>
+                    <li><a href="#software">Software</a></li>
+                    <li><a href="#data">Data</a></li>
 					<li><a href="#experiences">Experiences</a></li>
-                    <li><a href="#links">Links</a></li>
+                    <!--<li><a href="#links">Links</a></li>-->
 				</ul>
 			</header>
 
@@ -97,6 +98,11 @@ ga('send', 'pageview');
 					<li>J.-P. Fauconnier, M. Kamel, B. Rothenburger, N. Aussenac-Gilles. <i>Apprentissage supervisé pour l'identification de relations sémantiques au sein de structures énumératives parallèles</i> (regular paper). Traitement Automatique des Langues Naturelles (TALN 2013), Les Sables d'Olonne, Association pour le Traitement Automatique des Langues (ATALA), p. 132-145, 2013. <a href="http://37.187.110.113/dl/Fauconnier_et_al_TALN2013.pdf">PDF</a></li>
 				</ul>
 
+				<h4>Thesis</h4>
+                <ul>
+                    <li>J.-P. Fauconnier, <i>Acquisition de liens sémantiques à partir d'éléments de mise en forme des textes : exploitation des structures énumératives</i> (PhD Thesis). Université de Toulouse, 2016. <a href="https://raw.githubusercontent.com/fauconnier/phdthesis/master/Fauconnier_2016.pdf">PDF</a> </li>
+                </ul>
+
 				<h4>Talks</h4>
 				<ul>
                     <li>J.-P. Fauconnier. <i>Mise en forme et indices linguistiques de surface pour l'extraction de connaissances</i> (talk). Journées d'étude internationales S'caladis, Université Toulouse Jean Jaurès, Toulouse, 11/19/15. <a href="http://w3.erss.univ-tlse2.fr/JE_Enumeration2015/Resumes/Fauconnier_JEenumeration2015.pdf">Abstract</a></li>
@@ -141,13 +147,13 @@ ga('send', 'pageview');
 				</ul>
 
 				<!-- Software -->
-				<h3>Software & Data<span id="softwaredata" class="anchor"/></h3>
+				<h3>Software<span id="software" class="anchor"/></h3>
 				<p>Most of resources are located on my <a href="https://github.com/fauconnier?tab=repositories" class="user-mention" target="_blank">github repository</a>. The fast way to download a given <i>resource</i> is to use git:</p>	
 				<pre><code>$ mkdir resource
 $ cd resource
 $ git clone https://github.com/fauconnier/resource</code></pre>
 
-				<h4>Some personal softwares</h4>
+				<h4>Personal softwares</h4>
 				<a href="https://github.com/fauconnier/AMI" target="_blank"><img src="./pics/ami.png" alt="AMI" class="projectpic"/></a>
 				<p><a href="https://github.com/fauconnier/AMI" target="_blank">AMI</a> (<i>Another Maxent Implementation</i>) is a R implementation of multinomial logistic regression, also known as Maximum Entropy classifier. This implementation deals with binary and real-valued features and uses standard R functions to optimize the objective. Then, it is possible to use several iterative methods: LM-BFGS, Conjugate Gradient, Gradient Descent and Generalized Iterative Scaling.</p>
 
@@ -157,13 +163,17 @@ $ git clone https://github.com/fauconnier/resource</code></pre>
 				<a href="https://github.com/fauconnier/LaToe" target="_blank"><img src="./pics/latoe.png" alt="LaToe" class="projectpic"/></a>
 				<p><a href="https://github.com/fauconnier/LaToe" target="_blank">LaToe</a> (<i>Layout Annotation for Textual Object Extraction</i>) is a tool which extracts the text layout from HTML, MediaWiki, or PDF documents for identifying specific textual objects (such as enumerative structures). Currently, the CRF model used for the PDF analyzer was trained on a small corpus (LING_GEOP). This implies that LaToe could be not efficient for unseen PDF documents with specific formatting. </p>
 
-                <!--Too soon-->
+                <!--Too soon. Need work. Need 48-hour Day  -->
                 <!--<a href="https://github.com/fauconnier/ML_KISS" target="_blank"><img src="./pics/ml_kiss.png" alt="ML_Kiss" class="projectpic"/></a>-->
                 <!--<p><a href="https://github.com/fauconnier/ML_KISS" target="_blank">ML KISS</a>. The goal of this project is relatively the same as the XingxingZhang's <a href="https://github.com/XingxingZhang/machine-learning-algorithms-details-and-implementation" target="_blank">one</a>, - that is-, providing simple implementations of some classic machine learning algorithms in order to understand the behind mechanisms. As far as possible, I want respect the following principles: (i) only the C++ Standard library, (ii) no obscure optimization tricks, and (iii) clear references to the literature. Currently, this project is in its initial stages.</p>-->
 
                 <h4>Source code reviews</h4>
                 <a href="https://github.com/fauconnier/code_review_tsuruoka" target="_blank"><img src="./pics/code_review_tsuruoka.png" alt="code_review_tsuruoka" class="projectpic"/></a>
                 <p><a href="https://github.com/fauconnier/code_review_tsuruoka" target="_blank">Code review</a> of a <i>C++ library for maximum entropy classification</i>. On his website, <a href="http://www.logos.ic.i.u-tokyo.ac.jp/~tsuruoka/" target="_blank">Tsuruoka</a> proposed a <a href="http://www.logos.ic.i.u-tokyo.ac.jp/~tsuruoka/maxent/" target="_blank">fast implementation</a> of a multinomial logistic regression. In order to get a better and deeper understanding of implementation details, I propose a simple code review. The code base is relatively small (around 2500 lines of code). Those notes are primary intended for my personal use and reflect my current understanding. I propose them here, in case it could help someone.</p>
+
+
+
+				<h3>Data<span id="data" class="anchor"/></h3>
 
 				<h4>Annotated copora</h4>
 				<ul>
