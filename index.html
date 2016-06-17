@@ -182,9 +182,9 @@ ga('send', 'pageview');
                 <!-- Software -->
                 <h3>Software<span id="software" class="anchor"/></h3>
                 <p>Most of resources are located on my <a href="https://github.com/fauconnier?tab=repositories" class="user-mention" target="_blank">github repository</a>. The fast way to download a given <i>resource</i> is to use git:</p>
-                <pre><code>$ mkdir resource
-$ cd resource
-$ git clone https://github.com/fauconnier/resource</code></pre>
+                <pre><code>mkdir resource
+cd resource
+git clone https://github.com/fauconnier/resource</code></pre>
 
                 <h4>Personal softwares</h4>
                 <a href="https://github.com/fauconnier/AMI" target="_blank"><img src="./pics/ami.png" alt="AMI" class="projectpic"/></a>
@@ -212,7 +212,30 @@ $ git clone https://github.com/fauconnier/resource</code></pre>
                 </ul>
 
                 <h4>Word embeddings models<span id="wordembeddingmodels" class="anchor"/></h4>
-                <p>Some <a href="http://code.google.com/p/word2vec/" target="_blank">word2vec</a> models in French.</p>
+                <p>I propose here some pre-trained word2vec models for French. Their format is the initial binary format proposed with  <a href="http://code.google.com/p/word2vec/" target="_blank">word2vec v 0.1c</a>. Depending on your needs, you may want to convert those models. Below I give a minimal example for Python.</p>
+
+                <pre><code>wget -c http://37.187.110.113/dl/frWac_postag_no_phrase_700_skip_cut50.bin
+pip install word2vec
+python
+>>> import word2vec
+>>> model = word2vec.load('frWac_postag_no_phrase_700_skip_cut50.bin')
+>>> indexes, scores = model.cosine(<span style="color:red">'intéressant_a'</span>)
+>>> model.generate_response(indexes,scores).tolist()
+[(<span style="color:blue">'très_adv'</span>        , 0.5967900206395151),
+(<span style="color:green">'intéresser_v'</span>     , 0.5439725695003301),
+(<span style="color:blue">'peu_adv'</span>          , 0.542676993533696),
+(<span style="color:blue">'assez_adv'</span>        , 0.5398579170306232),
+(<span style="color:blue">'certainement_adv'</span> , 0.5246291122355085),
+(<span style="color:blue">'plutôt_adv'</span>       , 0.5234975073833474),
+(<span style="color:red">'instructif_a'</span>     , 0.5230028009476526),
+(<span style="color:green">'trouver_v'</span>        , 0.5131327677418707),
+(<span style="color:blue">'aussi_adv'</span>        , 0.5056422730726639),
+(<span style="color:blue">'beaucoup_adv'</span>     , 0.5034801589883425)]
+</code></pre>
+
+<p>For this model, we can see that the adjective 'intéressant' has a lot of shared contexts with adverbs here.  Note that the color code and the layout is mine.
+Please check the <a href="https://arxiv.org/abs/1310.4546" target="_blank">paper of Mikolov <i>et al</i></a> to gain insight into the model hyper-parameters.</p>
+
                 <h5>frWac2Vec</h5>
                 <p><a href="http://wacky.sslmit.unibo.it/doku.php?id=corpora" target="_blank">FrWac corpus</a>, 1.6 billion of words. </p>
                 <table>
@@ -442,7 +465,6 @@ $ git clone https://github.com/fauconnier/resource</code></pre>
                     <li>Software &amp; Technologies, <a href="https://www.cetic.be/spip.php?lang=en" target="_blank">CETIC</a>, Belgium, 2010. Development of the semantic search engine <a href="http://www.slideshare.net/MusicNet/jp-fauconnier-j-roumier-musonto-a-semantic-search-engine-dedicated-to-music-and-musicians#stats-panel" target="_blank">MusOnto</a>.</li>
                     <li>Division PRE, <a href="http://www.fagg-afmps.be/en/" target="_blank">Federal Agency for Medicines and Health Products</a>, Belgium, 2009. Database integrity verification.</li>
                 </ul>
-
 
                 <!-- Links -->
                 <h3>Links<span id="links" class="anchor"/></h3>
