@@ -215,7 +215,7 @@ git clone https://github.com/fauconnier/resource</code></pre>
                 <h3>Data<span id="data" class="anchor"/></h3>
 
                 <h4>French word embeddings models<span id="wordembeddingmodels" class="anchor"/></h4>
-                <p>I propose here some pre-trained word2vec models for French. Their format is the initial binary format proposed with  <a href="http://code.google.com/p/word2vec/" target="_blank">word2vec v0.1c</a>. Depending on your needs, you may want to convert those models. A simple way to convert them into text format can be: </p>
+                <p>I propose here some pre-trained word2vec models for French. Their format is the initial binary format proposed with  <a href="http://code.google.com/p/word2vec/" target="_blank">word2vec v0.1c</a>. Depending on your needs, you may want to convert those models. A simple way to convert them into text can be: </p>
                 <pre><code>git clone https://github.com/marekrei/convertvec
 cd convertvec/
 make
@@ -244,125 +244,140 @@ python
 <p>For this model, we can see that the adjective 'intéressant' has a lot of shared contexts with adverbs.  Note that the color code and the layout are mine.
 Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov <i>et al., 2013)</i></a> to gain insight into the model hyper-parameters.</p>
 
+<p>Thanks to Tim V. C., Adam B., Claude C., Sascha R., Philipp D., Nirina R. and Antoine V. who all helped in retrieving some of the original models built in 2015.</p>
+
                 <h5>frWac2Vec</h5>
                 <p><a href="http://wacky.sslmit.unibo.it/doku.php?id=corpora" target="_blank">FrWac corpus</a>, 1.6 billion of words. </p>
                 <table>
                     <tr>
                         <td></td>
-                        <td>Lem</td>
-                        <td>Pos</td>
-                        <td>Phrase</td>
-                        <td>Train</td>
-                        <td>Dim</td>
-                        <td>Cutoff</td>
+                        <td>lem</td>
+                        <td>pos</td>
+                        <td>phrase</td>
+                        <td>train</td>
+                        <td>dim</td>
+                        <td>cutoff</td>
+                        <td>md5</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_non_lem_no_postag_no_phrase_200_cbow_cut0.bin">bin (2.7Gb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_non_lem_no_postag_no_phrase_200_cbow_cut0.bin">bin (2.7Gb)</a></td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
                         <td>cbow</td>
                         <td>200</td>
                         <td>0</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">7e49</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_non_lem_no_postag_no_phrase_200_cbow_cut100.bin">bin (120Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_non_lem_no_postag_no_phrase_200_cbow_cut100.bin">bin (120Mb)</a></td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
                         <td>cbow</td>
                         <td>200</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">5b5f</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_non_lem_no_postag_no_phrase_200_skip_cut100.bin">bin (120Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_non_lem_no_postag_no_phrase_200_skip_cut100.bin">bin (120Mb)</a></td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
                         <td>skip</td>
                         <td>200</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">6b86</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_non_lem_no_postag_no_phrase_500_skip_cut100.bin">bin (298Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_non_lem_no_postag_no_phrase_500_skip_cut100.bin">bin (298Mb)</a></td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
                         <td>skip</td>
                         <td>500</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">af38</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_non_lem_no_postag_no_phrase_500_skip_cut200.bin">bin (202Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_non_lem_no_postag_no_phrase_500_skip_cut200.bin">bin (202Mb)</a></td>
                         <td>-</td>
                         <td>-</td>
                         <td>-</td>
                         <td>skip</td>
                         <td>500</td>
                         <td>200</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">e2c6</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_no_postag_no_phrase_500_cbow_cut100.bin">bin (229Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_no_postag_no_phrase_500_cbow_cut100.bin">bin (229Mb)</a></td>
                         <td>&or;</td>
                         <td>-</td>
                         <td>-</td>
                         <td>cbow</td>
                         <td>500</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">1c85</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_no_postag_no_phrase_500_skip_cut100.bin ">bin (229Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_no_postag_no_phrase_500_skip_cut100.bin">bin (229Mb)</a></td>
                         <td>&or;</td>
                         <td>-</td>
                         <td>-</td>
                         <td>skip</td>
                         <td>500</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">54fc</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_no_postag_no_phrase_700_skip_cut50.bin">bin (494Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_no_postag_no_phrase_700_skip_cut50.bin">bin (494Mb)</a></td>
                         <td>&or;</td>
                         <td>-</td>
                         <td>-</td>
                         <td>skip</td>
                         <td>700</td>
                         <td>50</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">e235</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_postag_no_phrase_700_skip_cut50.bin">bin (577Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_postag_no_phrase_700_skip_cut50.bin">bin (577Mb)</a></td>
                         <td>&or;</td>
                         <td>&or;</td>
                         <td>-</td>
                         <td>skip</td>
                         <td>700</td>
                         <td>50</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">0695</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_postag_no_phrase_1000_skip_cut100.bin">bin (520Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_postag_no_phrase_1000_skip_cut100.bin">bin (520Mb)</a></td>
                         <td>&or;</td>
                         <td>&or;</td>
                         <td>-</td>
                         <td>skip</td>
                         <td>1000</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">8d09</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_no_postag_phrase_500_cbow_cut10.bin">bin (2Gb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_no_postag_phrase_500_cbow_cut10.bin">bin (2Gb)</a></td>
                         <td>&or;</td>
                         <td>-</td>
                         <td>&or;</td>
                         <td>cbow</td>
                         <td>500</td>
                         <td>10</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">14da</td>
                     </tr>
                     <tr>
-                        <td><a href="http://embeddings.net/frWac_no_postag_phrase_500_cbow_cut100.bin">bin (289Mb)</a></td>
+                        <td><a href="http://embeddings.net/embeddings/frWac_no_postag_phrase_500_cbow_cut100.bin">bin (289Mb)</a></td>
                         <td>&or;</td>
                         <td>-</td>
                         <td>&or;</td>
                         <td>cbow</td>
                         <td>500</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">f500</td>
                     </tr>
                 </table>
 
@@ -371,12 +386,14 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                 <table>
                     <tr>
                         <td></td>
-                        <td>Lem</td>
-                        <td>Pos</td>
-                        <td>Phrase</td>
-                        <td>Train</td>
-                        <td>Dim</td>
-                        <td>Cutoff</td>
+                        <td>lem</td>
+                        <td>pos</td>
+                        <td>phrase</td>
+                        <td>train</td>
+                        <td>dim</td>
+                        <td>cutoff</td>
+                        <td>md5</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_cbow_cut100.bin">bin (253Mb)</a></td>
@@ -386,6 +403,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>1000</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_cbow_cut200.bin">bin (195Mb)</a></td>
@@ -395,6 +413,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>1000</td>
                         <td>200</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_skip_cut100.bin">bin (253Mb)</a></td>
@@ -404,6 +423,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_skip_cut200.bin">bin (195Mb)</a></td>
@@ -413,6 +433,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>200</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_500_cbow_cut10.bin">bin (128Mb)</a></td>
@@ -422,6 +443,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>500</td>
                         <td>10</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_700_cbow_cut100.bin">bin (106Mb)</a></td>
@@ -431,6 +453,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>700</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_1000_skip_cut100.bin">bin (151Mb)</a></td>
@@ -440,6 +463,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>100</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_1000_skip_cut200.bin">bin (121Mb)</a></td>
@@ -449,6 +473,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>200</td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                 </table>
 
