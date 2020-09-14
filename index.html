@@ -223,22 +223,21 @@ make
 </code></pre>
                 <p>Below I give a minimal usage example in Python:</p>
 
-                <pre><code>pip install word2vec
+                <pre><code>pip install gensim
 python
->>> import word2vec
->>> model = word2vec.load('frWac_postag_no_phrase_700_skip_cut50.bin')
->>> indexes, scores = model.cosine(<span style="color:red">'intéressant_a'</span>)
->>> model.generate_response(indexes,scores).tolist()
-[(<span style="color:blue">'très_adv'</span>        , 0.5967900206395151),
-(<span style="color:green">'intéresser_v'</span>     , 0.5439725695003301),
-(<span style="color:blue">'peu_adv'</span>          , 0.542676993533696),
-(<span style="color:blue">'assez_adv'</span>        , 0.5398579170306232),
-(<span style="color:blue">'certainement_adv'</span> , 0.5246291122355085),
-(<span style="color:blue">'plutôt_adv'</span>       , 0.5234975073833474),
-(<span style="color:red">'instructif_a'</span>     , 0.5230028009476526),
-(<span style="color:green">'trouver_v'</span>        , 0.5131327677418707),
-(<span style="color:blue">'aussi_adv'</span>        , 0.5056422730726639),
-(<span style="color:blue">'beaucoup_adv'</span>     , 0.5034801589883425)]
+>>> from gensim.models import KeyedVectors
+>>> model = KeyedVectors.load_word2vec_format(<span style="color:purple">"frWac_postag_no_phrase_700_skip_cut50.bin"</span>, binary=True, unicode_errors="ignore")
+>>> model.most_similar(<span style="color:red">"intéressant_a"</span>)
+[(<span style="color:blue">'très_adv'</span>        , 0.5967904925346375),
+(<span style="color:green">'intéresser_v'</span>     , 0.5439727902412415),
+(<span style="color:blue">'peu_adv'</span>          , 0.5426771640777588),
+(<span style="color:blue">'assez_adv'</span>        , 0.5398581027984619),
+(<span style="color:blue">'certainement_adv'</span> , 0.5246292352676392),
+(<span style="color:blue">'plutôt_adv'</span>       , 0.5234975814819336),
+(<span style="color:red">'instructif_a'</span>     , 0.5230029225349426),
+(<span style="color:green">'trouver_v'</span>        , 0.5131329894065857),
+(<span style="color:blue">'aussi_adv'</span>        , 0.505642294883728),
+(<span style="color:blue">'beaucoup_adv'</span>     , 0.5034803152084351)]
 </code></pre>
 
 <p>For this model, we can see that the adjective 'intéressant' has a lot of shared contexts with adverbs.  Note that the color code and the layout are mine.
@@ -393,7 +392,6 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>dim</td>
                         <td>cutoff</td>
                         <td>md5</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_cbow_cut100.bin">bin (253Mb)</a></td>
@@ -403,7 +401,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>1000</td>
                         <td>100</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">087c</td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_cbow_cut200.bin">bin (195Mb)</a></td>
@@ -413,7 +411,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>1000</td>
                         <td>200</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">0a19</td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_skip_cut100.bin">bin (253Mb)</a></td>
@@ -423,7 +421,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>100</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">7d5c</td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_lem_no_postag_no_phrase_1000_skip_cut200.bin">bin (195Mb)</a></td>
@@ -433,7 +431,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>200</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">48a0</td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_500_cbow_cut10.bin">bin (128Mb)</a></td>
@@ -443,7 +441,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>500</td>
                         <td>10</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">052f</td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_700_cbow_cut100.bin">bin (106Mb)</a></td>
@@ -453,7 +451,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>cbow</td>
                         <td>700</td>
                         <td>100</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">8ff0</td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_1000_skip_cut100.bin">bin (151Mb)</a></td>
@@ -463,7 +461,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>100</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">5ac9</td>
                     </tr>
                     <tr>
                         <td><a href="http://embeddings.net/frWiki_no_phrase_no_postag_1000_skip_cut200.bin">bin (121Mb)</a></td>
@@ -473,7 +471,7 @@ Please check <a href="https://arxiv.org/abs/1310.4546" target="_blank">(Mikolov 
                         <td>skip</td>
                         <td>1000</td>
                         <td>200</td>
-                        <td><a href="http://embeddings.net/embeddings/md5sum.txt"> </td>
+                        <td><a href="http://embeddings.net/embeddings/md5sum.txt">bc16</td>
                     </tr>
                 </table>
 
