@@ -215,13 +215,13 @@ git clone https://github.com/fauconnier/resource</code></pre>
                 <h3>Data<span id="data" class="anchor"/></h3>
 
                 <h4>French word embeddings models<span id="wordembeddingmodels" class="anchor"/></h4>
-                <p>I propose here some pre-trained word2vec models for French. Their format is the original binary format proposed with  <a href="http://code.google.com/p/word2vec/" target="_blank">word2vec v0.1c</a>. Depending on your needs, you may want to convert those models. A simple way to convert them into text can be: </p>
+                <p>I propose here some pre-trained word2vec models for French. Their format is the original binary format proposed by <a href="http://code.google.com/p/word2vec/" target="_blank">word2vec v0.1c</a>. Depending on your needs, you may want to convert those models. A simple way to convert them into text can be: </p>
                 <pre><code>git clone https://github.com/marekrei/convertvec
 cd convertvec/
 make
 ./convertvec bin2txt frWiki_no_phrase_no_postag_700_cbow_cut100.bin output.txt
 </code></pre>
-                <p>Alternatively, you can load the binary format directly into a few Python libraries. Below I give a minimal usage example with Gensim:</p>
+                <p>Alternatively, you can load a binary model directly into a few Python libraries. Below I give a minimal usage example with Gensim:</p>
 
                 <pre><code>pip install gensim
 python
